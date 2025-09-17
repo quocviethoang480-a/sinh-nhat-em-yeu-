@@ -138,3 +138,18 @@ button:hover {
     text-shadow: 0 0 10px #ff66b2, 0 0 20px #ff3385, 0 0 40px #ff1a75;
   }
 }
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  border-radius: 15px;
+}
