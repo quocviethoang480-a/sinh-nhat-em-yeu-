@@ -130,3 +130,21 @@ function playMusic() {
     console.log("Trình duyệt chặn autoplay:", err);
   });
 }
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "💖"; // emoji trái tim
+
+  heart.style.left = Math.random() * 100 + "vw"; 
+  heart.style.animationDuration = (2 + Math.random() * 3) + "s"; // tốc độ rơi
+
+  document.body.appendChild(heart);
+
+  // xoá trái tim sau khi rơi xong
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+// tạo tim mỗi 300ms
+setInterval(createHeart, 300);
