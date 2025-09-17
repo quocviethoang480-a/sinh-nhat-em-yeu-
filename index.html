@@ -1,67 +1,43 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chúc mừng sinh nhật</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc mừng sinh nhật em yêu 🎂</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <header class="cover">
-      <img src="images/photo1.jpg" alt="cover" class="cover-img">
-      <div class="cover-overlay">
-        <h1>Chúc mừng sinh nhật em yêu 🎂</h1>
-        <p>Một ngày đặc biệt dành cho người đặc biệt.</p>
-      </div>
-    </header>
+    <h1 class="title">🎉 Chúc mừng sinh nhật em yêu 🎉</h1>
 
-    <main class="content">
-      <section class="left">
-        <div class="slideshow" id="slideshow">
-          <img src="images/photo1.jpg" class="slide active" alt="photo1">
-          <img src="images/photo2.jpg" class="slide" alt="photo2">
-          <img src="images/photo3.jpg" class="slide" alt="photo3">
-          <img src="images/photo4.jpg" class="slide" alt="photo4">
-          <img src="images/photo5.jpg" class="slide" alt="photo5">
-        </div>
+    <div class="image-box">
+      <img src="images/em1.jpg" alt="Em yêu">
+      <img src="images/em2.jpg" alt="Em yêu">
+    </div>
 
-        <div class="controls">
-          <button id="surpriseBtn" class="btn primary">Mở quà bất ngờ</button>
-          <button id="playToggle" class="btn">Tạm dừng nhạc</button>
-        </div>
-      </section>
+    <div class="card">
+      <h2>💌 Lời chúc</h2>
+      <p>
+        Chúc em sinh nhật thật ngọt ngào, nụ cười đáng yêu của em luôn rạng rỡ mỗi ngày 🌸.  
+        Anh luôn ở đây để yêu thương và che chở cho em.  
+        Mong rằng mọi buồn phiền tan biến, chỉ còn hạnh phúc bên anh thôi 💕.
+      </p>
+    </div>
 
-      <section class="right">
-        <div class="wishes card" id="wishes">
-          <h3>Lời chúc anh viết sẵn</h3>
-          <div id="wishContainer" class="wish-list"></div>
-        </div>
+    <div class="timeline">
+      <h2>📌 Kỷ niệm của tụi mình</h2>
+      <ul>
+        <li><span>01/12/2024</span> - Ngày chúng mình chính thức quen nhau 💖</li>
+        <li><span>20/09/2025</span> - Sinh nhật em yêu 🎂</li>
+      </ul>
+    </div>
 
-        <div class="memories card">
-          <h4>Kỉ niệm</h4>
-          <ul>
-            <li>Ngày mình gặp nhau: 01/12/2024</li>
-            <li>Chuyến đi cùng nhau: Đà Lạt - mùa hoa nở</li>
-            <li>Điều anh yêu ở em: 1) Nụ cười, 2) Sự ấm áp, 3) Trái tim chân thành</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+    <button id="giftBtn">🎁 Mở quà bí mật</button>
 
-    <footer class="footer">
-      <p id="dateRange">01/12/2024 – 20/09/2025</p>
-      <p class="share-link">Link chia sẻ (sau khi deploy lên Vercel): <a id="deployedLink" href="#" target="_blank">https://your-deployed-link.example/</a></p>
-    </footer>
+    <audio id="bgMusic" src="audio/music.mp3" loop></audio>
+    <button id="musicBtn">🎶 Bật nhạc</button>
   </div>
-
-  <canvas id="confettiCanvas" class="confetti"></canvas>
-
-  <audio id="bgAudio" loop>
-    <source src="audio/song.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
 
   <script src="script.js"></script>
 </body>
