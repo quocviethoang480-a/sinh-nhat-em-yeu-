@@ -73,3 +73,16 @@ function animate() {
 }
 
 animate();
+// Hiệu ứng trái tim bay khi click
+document.addEventListener("click", function (e) {
+  let heart = document.createElement("div");
+  heart.className = "heart";
+  heart.style.left = e.clientX + "px";
+  heart.style.top = e.clientY + "px";
+  heart.innerHTML = "❤️";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 4000);
+});
