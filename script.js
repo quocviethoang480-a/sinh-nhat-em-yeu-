@@ -100,3 +100,27 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 2500); // đổi ảnh sau 2.5 giây
 }
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "❤️";
+
+  // Vị trí random
+  heart.style.left = Math.random() * 100 + "vw";
+
+  // Kích thước random
+  heart.style.fontSize = Math.random() * 20 + 15 + "px";
+
+  // Thời gian rơi random
+  heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+  document.getElementById("hearts-container").appendChild(heart);
+
+  // Xóa trái tim sau khi rơi xong
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+// Tạo trái tim mỗi 300ms
+setInterval(createHeart, 300);
