@@ -124,3 +124,9 @@ function createHeart() {
 
 // Tạo trái tim mỗi 300ms
 setInterval(createHeart, 300);
+function playMusic() {
+  const music = document.getElementById("bg-music");
+  music.play().catch(err => {
+    console.log("Trình duyệt chặn autoplay:", err);
+  });
+}
