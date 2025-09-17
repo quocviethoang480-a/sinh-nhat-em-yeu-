@@ -231,3 +231,18 @@ button:hover {
     opacity: 0;
   }
 }
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 20px;
+  color: red;
+  animation: fall linear forwards;
+  z-index: 0; /* cho nó chạy dưới ảnh và chữ */
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
