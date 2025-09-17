@@ -153,3 +153,22 @@ button:hover {
 .mySlides img {
   border-radius: 15px;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px; /* thu nhỏ bớt chiều cao */
+  object-fit: cover; /* crop vừa khung */
+  border-radius: 12px; /* bo góc đẹp hơn */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* zoom nhẹ khi hover */
+}
